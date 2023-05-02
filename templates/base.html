@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="{% static 'homepage/css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'homepage/css/flaticon.css' %}">
+<link rel="stylesheet" href="{% static 'homepage/css/remixicon.css' %}">
+<link rel="stylesheet" href="{% static 'homepage/css/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'homepage/css/swiper-min.css' %}">
+<link rel="stylesheet" href="{% static 'homepage/css/fancybox.css' %}">
+<link rel="stylesheet" href="{% static 'homepage/css/aos.css' %}">
+<link rel="stylesheet" href="{% static 'homepage/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'homepage/css/responsive.css' %}">
+<link rel="stylesheet" href="{% static 'homepage/css/dark-theme.css' %}">
+<title>人工智能算法软件开发工作室</title>
+<link rel="icon" type="image/ico" href="{% static 'homepage/img/favicon.ico' %}">
+</head>
+<body>
+
+{#<div class="loader js-preloader">#}
+{#<img src="{% static 'homepage/img/preloader.gif' %}" alt="Image">#}
+{#</div>#}
+
+
+<div class="switch-theme-mode">
+<label id="switch" class="switch">
+<input type="checkbox" onchange="toggleTheme()" id="slider">
+<span class="slider round"></span>
+</label>
+</div>
+
+
+<div class="page-wrapper">
+{#######################################################################################################################}
+{#header#}
+<!-- 引入导航栏 -->
+{% include 'header.html' %}
+{#######################################################################################################################}
+
+
+
+<!-- 预留具体页面的位置 -->
+{% block content %}{% endblock content %}
+
+
+{####################################################################################################################}
+{#footer#}
+<!-- 引入注脚 -->
+{% include 'footer.html' %}
+{####################################################################################################################}
+
+</div>
+
+<a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>
+
+<script src="{% static 'homepage/js/jquery.min.js' %}"></script>
+<script src="{% static 'homepage/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'homepage/js/form-validator.min.js' %}"></script>
+<script src="{% static 'homepage/js/contact-form-script.js' %}"></script>
+<script src="{% static 'homepage/js/aos.js' %}"></script>
+<script src="{% static 'homepage/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'homepage/js/swiper-min.js' %}"></script>
+<script src="{% static 'homepage/js/fancybox.js' %}"></script>
+<script src="{% static 'homepage/js/jquery.appear.js' %}"></script>
+<script src="{% static 'homepage/js/tweenmax.min.js' %}"></script>
+<script src="{% static 'homepage/js/main.js' %}"></script>
+</body>
+</html>

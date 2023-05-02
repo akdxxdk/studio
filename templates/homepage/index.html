@@ -1,0 +1,212 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{#######################################################################################################################}
+{#index#}
+<!-- 主页内容 -->
+{% load static %}
+<section class="hero-wrap style1">
+<img src="{% static 'homepage/img/hero/hero-shape-1.png' %}" alt="Image" class="hero-shape-one">
+<div class="container">
+<div class="row align-items-center gx-5">
+<div class="col-lg-6">
+<div class="hero-content">
+<span data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">专业人工智能算法软件开发</span>
+<h1 data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">享受最佳体验</h1>
+<p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">探索人工智能技术在城市、交通、医疗、教育、文旅、金融、制造业等行业的应用，关注新领域，开展共性技术平台的研发。开展人工智能基础软硬件系统的研发，构建技术生态的软硬件基础，包括新一代人工智能训练框架、编程语言、编译器等基础软件，人工智能芯片、传感器等基础硬件。</p>
+<a href="#" class="btn style1" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="500">查看我们的所有工作</a>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="hero-img-wrap" data-speed="0.10" data-revert="true">
+<img src="{% static 'homepage/img/hero/hero-shape-2.png' %}" alt="" class="hero-shape-one">
+<img src="{% static 'homepage/img/index/image-1.jpeg' %}" alt="Image">
+</div>
+</div>
+</div>
+</div>
+<a href="#features" class="scroll-to-section bounce"><i class="flaticon-down-arrow"></i></a>
+</section>
+
+<section class="pricing-wrap pt-100 pb-75 bg-clay">
+<div class="container">
+<div class="row">
+<div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+<div class="section-title style2 text-center mb-50">
+<h2>选择您的服务</h2>
+<p>本工作室竭诚为您服务，本工作室经营内容如下：</p>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-xl-4 col-lg-6 col-md-6">
+<div class="pricing-card style2">
+<h6>Python+OpenCV图像处理</h6>
+<div class="pricing-tag">需求定价格</div>
+<ul class="pricing-features list-style">
+<li><i class="ri-check-fill"></i>OCR文字提取</li>
+<li><i class="ri-check-fill"></i>cv各种图像处理技能</li>
+<li><i class="ri-check-fill"></i>制作简易图像处理软件</li>
+<li><i class="ri-check-fill"></i>人脸检测与识别、车牌提取</li>
+</ul>
+<a href="/contact" class="btn style2">立即咨询</a>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6">
+<div class="pricing-card style2">
+<h6>Python数据处理与可视化</h6>
+<div class="pricing-tag">需求定价格</div>
+<ul class="pricing-features list-style">
+<li><i class="ri-check-fill"></i>为公司提供数据分析服务</li>
+<li><i class="ri-check-fill"></i>为公司提供数据可视化服务</li>
+<li><i class="ri-check-fill"></i>教授Python、numpy和sklearn数据分析与可视化理论</li>
+<li><i class="ri-check-fill"></i>绘制各种数据分析图像</li>
+</ul>
+<a href="/contact" class="btn style2">立即咨询</a>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6">
+<div class="pricing-card style2">
+<h6>承接深度学习项目</h6>
+<div class="pricing-tag">需求定价格</div>
+<ul class="pricing-features list-style">
+<li><i class="ri-check-fill"></i>Windows/Linux系统深度学习环境配置</li>
+<li><i class="ri-check-fill"></i>数据标注服务</li>
+<li><i class="ri-check-fill"></i>二分类、多分类项目</li>
+<li><i class="ri-check-fill"></i>目标检测项目</li>
+</ul>
+<a href="/contact" class="btn style2">立即咨询</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="features" class="feature-wrap pt-100 pb-75">
+<div class="container">
+<div class="row">
+<div class="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
+<div class="section-title text-center mb-50">
+<h2><span>本工作室服务内容</span></h2>
+<h2>人工智能算法软件开发</h2>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+<div class="feature-card">
+<div class="feature-icon">
+<img src="{% static 'homepage/img/about/icon-1.svg' %}" alt="Image">
+</div>
+<div class="feature-info">
+<h3>AI+安防</h3>
+<p>人工智能助力安全防范</p><p>对于大型安防系统来说，人工智能技术可以帮助管理者更好地监测和管理系统，并确保系统的安全性和稳定性。</p>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+<div class="feature-card active">
+<div class="feature-icon">
+<img src="{% static 'homepage/img/about/icon-2.svg' %}" alt="Image">
+</div>
+<div class="feature-info">
+<h3>AI+教育</h3>
+<p>人工智能助力教育事业</p><p>AI技术可以通过分析和识别教学资源的优劣和适用性，优化和升级教学资源，提升教学质量和效果。</p>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+<div class="feature-card">
+<div class="feature-icon">
+<img src="{% static 'homepage/img/about/icon-3.svg' %}" alt="Image">
+</div>
+<div class="feature-info">
+<h3>AI+农业</h3>
+<p>人工智能助理农业发展</p><p>利用电脑图像识别技术来获取农作物的生长状况，通过机器学习，分析和判断，并且能够立即执行。</p>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+<div class="feature-card">
+<div class="feature-icon">
+<img src="{% static 'homepage/img/about/icon-4.svg' %}" alt="Image">
+</div>
+<div class="feature-info">
+<h3>AI+金融</h3>
+<p>人工智能探索金融数据</p><p>智能金融，本质上是人工智能技术驱动的金融创新，从科技角度讲，智能金融的发展，是基于人工智能技术的智能客服、智能风控、智能营销、智能投研、智能投顾等场景的解决方案</p>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+<div class="feature-card">
+<div class="feature-icon">
+<img src="{% static 'homepage/img/about/icon-4.svg' %}" alt="Image">
+</div>
+<div class="feature-info">
+<h3>AI+医疗</h3>
+<p>人工智能探索医疗安全</p><p> 尽管心脏检测仪一类的医疗设备也可以跟踪重要生命体征，但人工智能可以从这些设备收集数据，发现更加复杂的状况，如败血症。</p>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
+<div class="feature-card">
+<div class="feature-icon">
+<img src="{% static 'homepage/img/about/icon-4.svg' %}" alt="Image">
+</div>
+<div class="feature-info">
+<h3>AI+家居</h3>
+<p>人工智能助力智能家居</p><p>通过物联网技术将家中的各种设备连接到一起，提供家电可编程定时控制等多种功能和手段。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<div class="instagram-wrap">
+<div class="instagram-slider owl-carousel">
+<a class="insta-card" href="{% static 'homepage/img/index/image-1.jpeg' %}" data-fancybox="gallery" data-caption="Instagram Gallery">
+<img src="{% static 'homepage/img/index/image-1.jpeg' %}" alt="Image">
+<span><i class="ri-instagram-line"></i></span>
+</a>
+<a class="insta-card" href="{% static 'homepage/img/index/image-2.jpeg' %}" data-fancybox="gallery" data-caption="Instagram Gallery">
+<img src="{% static 'homepage/img/index/image-2.jpeg' %}" alt="Image">
+<span><i class="ri-instagram-line"></i></span>
+</a>
+<a class="insta-card" href="{% static 'homepage/img/index/image-3.jpeg' %}" data-fancybox="gallery" data-caption="Instagram Gallery">
+<img src="{% static 'homepage/img/index/image-3.jpeg' %}" alt="Image">
+<span><i class="ri-instagram-line"></i></span>
+</a>
+<a class="insta-card" href="{% static 'homepage/img/index/image-4.jpeg' %}" data-fancybox="gallery" data-caption="Instagram Gallery">
+<img src="{% static 'homepage/img/index/image-4.jpeg' %}" alt="Image">
+<span><i class="ri-instagram-line"></i></span>
+</a>
+<a class="insta-card" href="{% static 'homepage/img/index/image-5.jpeg' %}" data-fancybox="gallery" data-caption="Instagram Gallery">
+<img src="{% static 'homepage/img/index/image-5.jpeg' %}" alt="Image">
+<span><i class="ri-instagram-line"></i></span>
+</a>
+<a class="insta-card" href="{% static 'homepage/img/index/image-6.jpeg' %}" data-fancybox="gallery" data-caption="Instagram Gallery">
+<img src="{% static 'homepage/img/index/image-6.jpeg' %}" alt="Image">
+<span><i class="ri-instagram-line"></i></span>
+</a>
+<a class="insta-card" href="{% static 'homepage/img/index/image-7.jpg' %}" data-fancybox="gallery" data-caption="Instagram Gallery">
+<img src="{% static 'homepage/img/index/image-7.jpg' %}" alt="Image">
+<span><i class="ri-instagram-line"></i></span>
+</a>
+<a class="insta-card" href="{% static 'homepage/img/index/image-8.jpeg' %}" data-fancybox="gallery" data-caption="Instagram Gallery">
+<img src="{% static 'homepage/img/index/image-8.jpeg' %}" alt="Image">
+<span><i class="ri-instagram-line"></i></span>
+</a>
+<a class="insta-card" href="{% static 'homepage/img/index/image-9.jpeg' %}" data-fancybox="gallery" data-caption="Instagram Gallery">
+<img src="{% static 'homepage/img/index/image-9.jpeg' %}" alt="Image">
+<span><i class="ri-instagram-line"></i></span>
+</a>
+<a class="insta-card" href="{% static 'homepage/img/index/image-10.png' %}" data-fancybox="gallery" data-caption="Instagram Gallery">
+<img src="{% static 'homepage/img/index/image-10.png' %}" alt="Image">
+<span><i class="ri-instagram-line"></i></span>
+</a>
+</div>
+</div>
+{#######################################################################################################################}
+{% endblock %}

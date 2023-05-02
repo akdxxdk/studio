@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{#######################################################################################################################}
+{#index#}
+<!-- 主页内容 -->
+{% load static %}
+<div class="content-wrapper">
+
+<div class="breadcrumb-wrap">
+<img src="{% static 'homepage/img/breadcrumb/br-shape.png' %}" alt="Image" class="br-shape">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-sm-6">
+<div class="breadcrumb-title">
+<h2>联系工作室</h2>
+<ul class="breadcrumb-menu list-style">
+<li><a href="/index">首页 </a></li>
+<li>联系工作室</li>
+ </ul>
+</div>
+</div>
+{#<div class="col-sm-6">#}
+{#<div class="breadcrumb-img">#}
+{#<img src=“{% static 'homepage/img/breadcrumb/br-1.png' %}" alt="Image">#}
+{#</div>"#}
+{#</div>#}
+</div>
+</div>
+</div>
+
+
+<section class="contact-us-wrap pt-100 pb-100">
+<div class="container">
+<div class="row gx-5">
+<div class="col-lg-6 col-12">
+<div class="contact-content">
+<div class="content-title">
+<span>联系工作室</span>
+<h2>与工作室取得联系</h2>
+<p>获取更多信息资源</p>
+</div>
+<ul class="contact-info list-style">
+<li>
+<i class="ri-map-pin-fill"></i>
+<p>云南省昭通市昭阳区</p>
+</li>
+<li>
+<i class="ri-phone-fill"></i>
+<a href="tel:15990710899">+1-5990-7108-99</a>
+<a href="tel:15706762679">+1-5706-7626-79</a>
+</li>
+{#<li>#}
+{#<i class="ri-mail-open-fill"></i>#}
+{#<a href="/cdn-cgi/l/email-protection#f199949d9d9eb1819e8798df929e9c"><span class="__cf_email__" data-cfemail="dbb3beb7b7b49babb4adb2f5b8b4b6">[email&#160;protected]</span></a>#}
+{#<a href="/cdn-cgi/l/email-protection#f784828787988583b78798819ed994989a"><span class="__cf_email__" data-cfemail="d8abada8a8b7aaac98a8b7aeb1f6bbb7b5">[email&#160;protected]</span></a>#}
+{#</li>#}
+</ul>
+<div class="social-link">
+<h6>关注工作室:</h6>
+<ul class="social-profile style4 list-style">
+<li>
+<a target="_blank" href="https://facebook.com">
+<i class="ri-facebook-fill"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com">
+<i class="ri-twitter-fill"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://instagram.com">
+<i class="ri-instagram-fill"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://linkedin.com">
+<i class="ri-linkedin-fill"></i>
+</a>
+</li>
+</ul>
+</div>
+ </div>
+</div>
+<div class="col-lg-6 col-12">
+<div class="contact-form">
+<form class="form-wrap" id="contactForm">
+<div class="form-group">
+<input type="text" name="name" placeholder="你的名称*" id="name" required data-error="请输入你的名称">
+<div class="help-block with-errors"></div>
+</div>
+<div class="form-group">
+<input type="email" name="email" id="email" required placeholder="你的电子邮箱*" data-error="请输入你的电子邮箱">
+<div class="help-block with-errors"></div>
+</div>
+<div class="form-group">
+<input type="text" name="msg_subject" placeholder="主题*" id="msg_subject" required data-error="请输入你的主题">
+<div class="help-block with-errors"></div>
+</div>
+<div class="form-group v1">
+<textarea name="message" id="message" placeholder="你的消息.." cols="30" rows="10" required data-error="请输入你的消息"></textarea>
+<div class="help-block with-errors"></div>
+</div>
+<div class="form-group">
+<div class="form-check checkbox">
+<input name="gridCheck" value="我同意条款和隐私政策。" class="form-check-input" type="checkbox" id="gridCheck" required>
+<label class="form-check-label" for="gridCheck">
+我同意 <a class="link style1" href="terms-of-service.html">条款 & 条件</a> 和 <a class="link style1" href="privacy-policy.html">隐私策略</a>
+</label>
+<div class="help-block with-errors gridCheck-error"></div>
+</div>
+</div>
+<div class="col-md-12">
+<button type="submit" class="btn style1 w-100 d-block">发送消息</button>
+<div id="msgSubmit" class="h3 text-center hidden"></div>
+<div class="clearfix"></div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+
+
+{#######################################################################################################################}
+{% endblock %}
